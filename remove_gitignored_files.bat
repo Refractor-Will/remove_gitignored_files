@@ -8,4 +8,4 @@ git ls-files -ci --exclude-standard
 FOR /F "tokens=*" %%G IN ('git ls-files -ci --exclude-standard') DO git rm --cached "%%G"
 
 :: Commit changes
-git commit -am "Removed unwanted files marked in .gitignore"
+git commit -m "Removed unwanted files marked in .gitignore"
